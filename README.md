@@ -6,4 +6,5 @@
 - Troisième étape (2): faire le CSS en fonction des cards après avoir fait le .map ✅
 - Quatrième étape (1): Création du state
 - Quatrième étape (2): Faire les modifications du state
+- Cinquième étape: Faire en sorte que le style des "boutons" change en fonction du state
 

@@ -1,4 +1,5 @@
 import './Card.css'
+import petitsPoints from '../../assets/images/icon-ellipsis.svg'
 
 function Card (props){
     console.log(props.current);
@@ -10,7 +11,7 @@ function Card (props){
             </div>
             <div className="working">
                 <h1>{props.data.title}</h1>
-                {/* <img src="" alt="" /> */}
+                <img src={petitsPoints} alt="" />
                 <div>
                     <div className="d-flex">
                         <p className="info"> {props.current}  HRS</p>

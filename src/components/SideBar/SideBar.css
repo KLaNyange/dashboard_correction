@@ -9,12 +9,13 @@
     background-color: hsl(235, 46%, 20%);
     height: 150px;
     width: 200px;
-    color: white;
+    /* color: white; */
     border-radius: 10px;
 }
 
 .mini p{
     margin: 0;
+    cursor: pointer;
 }
 .grande img{
     height: 60px;
@@ -28,5 +29,10 @@
     margin-left: 15px;
 }
 .colorPeriod{
+    color: white;
+}
+
+
+.active{
     color: white;
 }

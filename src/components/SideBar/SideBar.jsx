@@ -1,4 +1,5 @@
-import './SideBar.css'
+import './SideBar.css' 
+import imgJeremy from '../../assets/images/image-jeremy.png'
 
 function SideBar(props) {
 
@@ -8,7 +9,7 @@ function SideBar(props) {
         <>
             <div className="dflex">
                 <div className="grande">
-                    {/* <img src="" alt="" /> */}
+                    <img src={imgJeremy} alt="" />
                     <div className="margin-left">
                         <p>Report for</p>
                         <h2>Jeremy</h2>
@@ -17,9 +18,9 @@ function SideBar(props) {
                 </div>
                 <div className="mini">
                     <div className="margin-left">
-                        <p onClick={props.daily}>Daily</p>
-                        <p className="colorPeriod" onClick={props.weekly}>Weekly</p>
-                        <p onClick={props.monthly}>Monthly</p>
+                        <p className={props.time === 'daily' ? 'active' : ''} onClick={props.daily}>Daily</p>
+                        <p className={props.time === 'weekly' ? 'active' : ''} onClick={props.weekly}>Weekly</p>
+                        <p className={props.time === 'monthly' ? 'active' : ''} onClick={props.monthly}>Monthly</p>
                     </div>
                 </div>
             </div>

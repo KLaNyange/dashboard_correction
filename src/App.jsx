@@ -25,7 +25,8 @@ function App() {
   return (
     <>
       <div className='d-flex'>
-        <SideBar daily={daily} weekly={weekly} monthly={monthly} /> 
+        <SideBar daily={daily} weekly={weekly} monthly={monthly}  time={time} /> 
+        <div className='wrap'>
         {
           data.map((data, index)=>(
             <div key={index}>
@@ -33,6 +34,7 @@ function App() {
             </div>
           ))
         }
+        </div>
       </div>
     </>
   )
