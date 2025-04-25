@@ -1,0 +1,32 @@
+.grande{
+    background-color: hsl(246, 80%, 60%);
+    width: 200px;
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+}
+.mini{
+    background-color: hsl(235, 46%, 20%);
+    height: 150px;
+    width: 200px;
+    color: white;
+    border-radius: 10px;
+}
+
+.mini p{
+    margin: 0;
+}
+.grande img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.margin-left{
+    margin-left: 15px;
+}
+.colorPeriod{
+    color: white;
+}
