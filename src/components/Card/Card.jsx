@@ -3,7 +3,8 @@ import './Card.css'
 function Card (props){
     return(
         <div className="card">
-            <div className="work">
+            {/* Pour afficher un bgimage et bgcolor différent pour chacune des cards on vient créer un ID qui sera dynamiquement changer en fonction des titres. ATTENTION: à cause du fait que self care soit en 2 mots. On a du rajouter les méthodes split et joint pour que l'ID ne soit plus 'self care' mais 'self-care' */}
+            <div className="work" id={props.data.title.split(' ').join('-').toLowerCase()}> 
             </div>
             <div className="working">
                 <h1>{props.data.title}</h1>
