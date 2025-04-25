@@ -1,3 +1,7 @@
 body{
     background-color: hsl(226, 43%, 10%);
 }
+
+*{
+    color: white;
+}

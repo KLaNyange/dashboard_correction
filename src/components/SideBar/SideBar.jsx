@@ -5,7 +5,7 @@ function SideBar() {
         <>
             <div className="dflex">
                 <div className="grande">
-                    <img src="" alt="" />
+                    {/* <img src="" alt="" /> */}
                     <div className="margin-left">
                         <p>Report for</p>
                         <h2>Jeremy</h2>
