@@ -2,7 +2,16 @@ import './Card.css'
 import petitsPoints from '../../assets/images/icon-ellipsis.svg'
 
 function Card (props){
-    console.log(props.current);
+    console.log(props.time);
+
+    let timing
+    if (props.time === 'daily') {
+        timing = 'Yesterday'
+    }else if (props.time === 'weekly') {
+        timing = 'Last week'
+    }else{
+        timing = 'Last month'
+    }
     
     return(
         <div className="card">
@@ -14,8 +23,8 @@ function Card (props){
                 <img src={petitsPoints} alt="" />
                 <div>
                     <div className="d-flex">
-                        <p className="info"> {props.current}  HRS</p>
-                        <p className="colors">Last Week - {props.previous} hrs</p>
+                        <p className="info"> {props.current}{props.current>1 ? 'hrs' : 'hr'}  </p>
+                        <p className="colors">{timing} - {props.previous} {props.current>1 ? 'hrs' : 'hr'} </p>
                     </div>
                 </div>
             </div>

@@ -18,9 +18,12 @@ function SideBar(props) {
                 </div>
                 <div className="mini">
                     <div className="margin-left">
-                        <p className={props.time === 'daily' ? 'active' : ''} onClick={props.daily}>Daily</p>
+                        <p className={props.time === 'daily' ? 'active' : ''} onClick={props.changeTime}>Daily</p>
+                        <p className={props.time === 'weekly' ? 'active' : ''} onClick={props.changeTime}>Weekly</p>
+                        <p className={props.time === 'monthly' ? 'active' : ''} onClick={props.changeTime}>Monthly</p>
+                        {/* <p className={props.time === 'daily' ? 'active' : ''} onClick={props.daily}>Daily</p>
                         <p className={props.time === 'weekly' ? 'active' : ''} onClick={props.weekly}>Weekly</p>
-                        <p className={props.time === 'monthly' ? 'active' : ''} onClick={props.monthly}>Monthly</p>
+                        <p className={props.time === 'monthly' ? 'active' : ''} onClick={props.monthly}>Monthly</p> */}
                     </div>
                 </div>
             </div>

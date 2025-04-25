@@ -22,15 +22,20 @@ function App() {
     setTime('monthly')
   }
 
+  // Grace à cette fonction je ne dois plus utiliser les 3 fonctions daily, weekly et monthly
+  const changeTime = (e) =>{
+    setTime(e.target.innerText.toLowerCase())
+  }
+
   return (
     <>
       <div className='d-flex'>
-        <SideBar daily={daily} weekly={weekly} monthly={monthly}  time={time} /> 
+        <SideBar daily={daily} weekly={weekly} monthly={monthly} changeTime={changeTime}  time={time} /> 
         <div className='wrap'>
         {
           data.map((data, index)=>(
             <div key={index}>
-              <Card data={data} current={data.timeframes[time].current} previous={data.timeframes[time].previous} />       
+              <Card data={data} current={data.timeframes[time].current} previous={data.timeframes[time].previous} time={time}  />       
             </div>
           ))
         }
