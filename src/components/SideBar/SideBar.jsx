@@ -1,6 +1,9 @@
 import './SideBar.css'
 
-function SideBar() {
+function SideBar(props) {
+
+    
+
     return (
         <>
             <div className="dflex">
@@ -14,9 +17,9 @@ function SideBar() {
                 </div>
                 <div className="mini">
                     <div className="margin-left">
-                        <p>Daily</p>
-                        <p className="colorPeriod">Weekly</p>
-                        <p>Monthly</p>
+                        <p onClick={props.daily}>Daily</p>
+                        <p className="colorPeriod" onClick={props.weekly}>Weekly</p>
+                        <p onClick={props.monthly}>Monthly</p>
                     </div>
                 </div>
             </div>
